@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me Section</title>
+    <link rel="stylesheet" href="style.css"> <!-- External CSS -->
+</head>
+<body>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h1>About Me</h1>
+                <p>
+                    I am a passionate developer skilled in HTML, CSS, JavaScript, Python, C, and C++, 
+                    with a solid foundation in Data Structures and Algorithms (DSA). I am proficient in 
+                    Git and GitHub for version control and collaborative development. I enjoy building 
+                    interactive, efficient, and scalable projects, focusing on writing clean, optimized, 
+                    and maintainable code. I am driven by problem-solving, continuous learning, and 
+                    exploring new technologies, and I strive to create innovative and practical solutions 
+                    that have real-world impact.
+                </p>
+                <a href="contact.html" class="btn">Contact Me</a>
+            </div>
+            <div class="about-image">
+                <img src="mahak1.jpg" alt="Profile Picture">
+            </div>
+        </div>
+    </section>
+<style>
+    /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body background dark */
+body {
+    background: #0f0f0f;
+}
+
+/* About Section */
+.about-section {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for content and image */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    background: #1a1a1a;
+    box-shadow: 0 10px 30px rgba(0, 255, 255, 0.2); /* Cyan glow */
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Content part */
+.about-content {
+    flex: 1 1 500px;
+    padding: 40px;
+}
+
+/* Heading */
+.about-content h1 {
+    font-size: 36px;
+    color:#fff; /* Cyan highlight */
+    margin-bottom: 20px;
+    text-shadow: 0 2px 8px#00ffff; /* Shine effect */
+}
+
+/* Paragraph */
+.about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ccc; /* Soft gray for readability */
+    margin-bottom: 30px;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #00ffff;
+    color: #1a1a1a;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.4);
+}
+
+.btn:hover {
+    background:#f0f0f0;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px #f0f0f0;
+}
+
+/* Image part */
+.about-image {
+    flex: 1 1 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111; /* Slightly different dark shade */
+}
+
+.about-image img {
+    width: 50%;
+    height:auto;
+    display: flex;
+    border-radius: 50%;
+    border: 5px solid #00ffff; /* Cyan border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0, 255, 255, 0.6);
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .about-content, .about-image {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .about-content h1 {
+        font-size: 28px;
+    }
+}
+
+</style>
+</body>
+</html>

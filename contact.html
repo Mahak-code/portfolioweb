@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="contact" class="contact-section">
+  <h2>Contact Me</h2>
+  <p>Feel free to reach out for collaboration or just a friendly hello!</p>
+
+  <div class="contact-container">
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <div class="info-box">
+        <i class="fa-solid fa-envelope"></i>
+        <h3>Email</h3>
+        <p>saxenamahak079@gmali.com</p>
+      </div>
+      <div class="info-box">
+        <i class="fa-solid fa-phone"></i>
+        <h3>Phone</h3>
+        <p>+91 6369308659</p>
+      </div>
+      <div class="info-box">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Location</h3>
+        <p>Bareilly, India</p>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<style>
+/* Contact Section */
+.contact-section {
+  padding: 80px 20px;
+  background: #0f0f0f;
+  color: #ccc;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  color: #00ffff;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 8px rgba(0,255,255,0.5);
+}
+
+.contact-section p {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+/* Container for info and form */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+/* Contact Info Boxes */
+.contact-info {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-box {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,255,255,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,255,255,0.4);
+}
+
+.info-box i {
+  font-size: 30px;
+  color: #00ffff;
+  margin-bottom: 10px;
+}
+
+.info-box h3 {
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.info-box p {
+  color: #ccc;
+}
+
+/* Contact Form */
+.contact-form {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 10px;
+  background: #1a1a1a;
+  color: #ccc;
+  font-size: 16px;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background: #111;
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #00ffff;
+  color: #0f0f0f;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #00b3b3;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,255,255,0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-section h2 {
+    font-size: 28px;
+  }
+}
+</style>
+
+</body>
+</html>

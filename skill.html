@@ -1,0 +1,131 @@
+<section id="skills" class="skills-section">
+  <h2>My Skills</h2>
+  <p>I am a passionate developer with the following skills:</p>
+
+  <!-- HTML -->
+  <div class="skill">
+    <h3>HTML</h3>
+    <div class="skill-bar html"><span>95%</span></div>
+  </div>
+
+  <div class="skill">
+    <h3>CSS</h3>
+    <div class="skill-bar css"><span>90%</span></div>
+  </div>
+
+  <div class="skill">
+    <h3>JavaScript</h3>
+    <div class="skill-bar js"><span>70%</span></div>
+  </div>
+
+  <div class="skill">
+    <h3>Python</h3>
+    <div class="skill-bar python"><span>80%</span></div>
+  </div>
+
+  <div class="skill">
+    <h3>C / C++</h3>
+    <div class="skill-bar cpp"><span>85%</span></div>
+  </div>
+
+  <div class="skill">
+    <h3>Git & GitHub</h3>
+    <div class="skill-bar git"><span>80%</span></div>
+  </div>
+
+  <div class="skill">
+    <h3>DSA</h3>
+    <div class="skill-bar dsa"><span>70%</span></div>
+  </div>
+</section>
+
+<style>
+/* Skills Section */
+.skills-section {
+  padding: 80px 20px;
+  background: #0f0f0f;
+  color: #ccc;
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 36px;
+  color: #00ffff;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 8px rgba(0,255,255,0.5);
+}
+
+.skills-section p {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+/* Individual skill */
+.skill {
+  margin: 20px 0;
+  text-align: left;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skill h3 {
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+/* Skill bar background */
+.skill-bar {
+  width: 100%;
+  background: #1a1a1a;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Skill fill */
+.skill-bar span {
+  display: block;
+  height: 25px;
+  width: 0;
+  background: #00ffff;
+  border-radius: 20px;
+  text-align: right;
+  line-height: 25px;
+  padding-right: 10px;
+  font-weight: bold;
+  color: #0f0f0f;
+  animation: fillBar 2s forwards;
+}
+
+/* Different widths using animation-delay and keyframes */
+.skill-bar.html span { animation-name: fillHTML; }
+.skill-bar.css span { animation-name: fillCSS; }
+.skill-bar.js span { animation-name: fillJS; }
+.skill-bar.python span { animation-name: fillPython; }
+.skill-bar.cpp span { animation-name: fillCPP; }
+.skill-bar.git span { animation-name: fillGit; }
+.skill-bar.dsa span { animation-name: fillDSA; }
+
+/* Keyframes for each skill */
+@keyframes fillHTML { from { width: 0; } to { width: 90%; } }
+@keyframes fillCSS { from { width: 0; } to { width: 90%; } }
+@keyframes fillJS { from { width: 0; } to { width: 85%; } }
+@keyframes fillPython { from { width: 0; } to { width: 80%; } }
+@keyframes fillCPP { from { width: 0; } to { width: 85%; } }
+@keyframes fillGit { from { width: 0; } to { width: 85%; } }
+@keyframes fillDSA { from { width: 0; } to { width: 80%; } }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-section h2 {
+    font-size: 28px;
+  }
+}
+.back-home {
+  text-align: center;
+  margin: 40px 0;
+}
+
+
+</style>

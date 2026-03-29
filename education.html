@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="education" class="education-section">
+  <h2>Education</h2>
+  <div class="education-container">
+    
+    <!-- Class 10 -->
+    <div class="edu-card">
+      <h3>Class 10th</h3>
+      <p><strong>Percentage:</strong> 88%</p>
+      <p><strong>Year:</strong> 2022</p>
+    </div>
+
+    <!-- Class 12 -->
+    <div class="edu-card">
+      <h3>Class 12th</h3>
+      <p><strong>Percentage:</strong> 81.2%</p>
+      <p><strong>Year:</strong> 2024</p>
+    </div>
+
+    <!-- B.Tech -->
+    <div class="edu-card">
+      <h3>B.Tech(CSE)</h3>
+      
+
+      <p><strong>University:</strong> A P J Abdul Kalam Technical University, Lucknow</p>
+      <p><strong>Duration:</strong> 2024 - 2028 </p>
+      <span>Currently pursuing</span>
+     
+    </div>
+
+  </div>
+</section>
+<style>
+    /* Section styling */
+.education-section {
+  padding: 80px 20px;
+  background-color: #0f0f0f;  /* Dark background */
+  color: #ccc;                /* Light gray text */
+  text-align: center;
+  min-height: 100vh;          /* Full screen height */
+}
+
+/* Section heading */
+.education-section h2 {
+  font-size: 36px;
+  color: #00ffff;             /* Cyan highlight */
+  margin-bottom: 50px;
+}
+
+/* Container for all cards */
+.education-container {
+  display: flex;
+  flex-wrap: wrap;            /* Wrap cards on small screens */
+  justify-content: space-around;
+  gap: 30px;                  /* Space between cards */
+  max-width: 1200px;
+  margin: 0 auto;             /* Center container */
+}
+
+/* Individual card */
+.edu-card {
+  background-color: #1a1a1a;  /* Darker card */
+  padding: 25px 20px;
+  border-radius: 15px;
+  max-width: 300px;
+  box-shadow: 0 5px 15px rgba(0,255,255,0.2); /* Simple glow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover animation */
+}
+
+/* Card hover effect */
+
+.edu-card:hover {
+  transform: translateY(-5px);  /* Moves card up slightly */
+  box-shadow: 0 10px 25px rgba(0,255,255,0.4); /* Brighter glow */
+}
+
+/* Card heading */
+.edu-card h3 {
+  color: #00ffff;
+  margin-bottom: 10px;
+}
+
+/* Card paragraph */
+.edu-card p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+  
+/* Responsive for mobile */
+@media (max-width: 900px) {
+  .education-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+</style>
+</body>
+</html>
